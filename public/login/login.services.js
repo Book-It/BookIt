@@ -5,7 +5,7 @@
     .factory('LoginService', function($http, moment, _) {
 
       var login = function(user) {
-        var url = '/login';
+        var url = '/login/';
         return $http.post(url, user);
       };
 

@@ -24,6 +24,9 @@ public class Band {
     @ManyToOne
     public User user;
 
+    @OneToOne
+    public PicFile pic;
+
     public int getId() {
         return id;
     }
